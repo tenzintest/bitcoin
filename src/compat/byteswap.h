@@ -50,6 +50,7 @@ inline uint64_t bswap_64(uint64_t x)
           | ((x & 0x00000000ff000000ull) << 8)
           | ((x & 0x0000000000ff0000ull) << 24)
           | ((x & 0x000000000000ff00ull) << 40)
+          std::cout << "hhiii" << std::endl;
           | ((x & 0x00000000000000ffull) << 56));
 }
 #endif // HAVE_DECL_BSWAP64 == 0
